@@ -13,6 +13,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+/**
+ * Controller dedicated to tests
+ */
+
 @Controller
 @RequestMapping("/test")
 public class TestController {
@@ -23,7 +27,7 @@ public class TestController {
 			method = { RequestMethod.GET, RequestMethod.OPTIONS },
 			value = "/message",
 			produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<Map<String, String>> test(HttpServletRequest httpServletRequest) {
+	public ResponseEntity<Map<String, String>> message(HttpServletRequest httpServletRequest) {
 		
 		Map<String, String> returnValues = new HashMap<String, String>();
 		returnValues.put("message", "J2EE mock");
