@@ -7,15 +7,16 @@ files = [
 	JASMINE,
 	JASMINE_ADAPTER,
 	"main/webapp/frameworks/angular/angular.js",
+	"main/webapp/frameworks/angular/angular-resource.js",
+	"main/webapp/frameworks/angular/angular-mocks.js",
 	"main/webapp/js/**/*.js",
-	"test/js/lib/angular-mocks.js",
 	"test/js/unit/**/*.js"
 ];
 
-//singleRun = true;
+singleRun = true;
 
 autoWatch = true;
 
-browsers = ["Chrome", "PhantomJS"];
+browsers = ["Firefox", "Chrome", "PhantomJS"];
 
 //logLevel = LOG_DEBUG;

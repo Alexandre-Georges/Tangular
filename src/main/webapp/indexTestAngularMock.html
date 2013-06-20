@@ -1,11 +1,11 @@
-<!-- Regular index -->
+<!-- Index used for e2e tests with mocked angular rest calls -->
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Tangular</title>
 	</head>
-	<body ng-app="mainApp" ng-controller="mainController">
+	<body ng-app="mainAppDev" ng-controller="mainController">
 		
 		<div class="ng-view"></div>
 		<br />
@@ -13,8 +13,10 @@
 		<script type="text/javascript" src="frameworks/jquery/jquery-1.9.1.js"></script>
 		<script type="text/javascript" src="frameworks/angular/angular.js"></script>
 		<script type="text/javascript" src="frameworks/angular/angular-resource.js"></script>
+		<script type="text/javascript" src="frameworks/angular/angular-mocks.js"></script>
 		
 		<script type="text/javascript" src="js/mainController.js"></script>
+		<script type="text/javascript" src="js/mainControllerTest.js"></script>
 		<script type="text/javascript" src="js/constants.js"></script>
 
 	</body>

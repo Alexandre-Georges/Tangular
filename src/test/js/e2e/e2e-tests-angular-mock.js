@@ -3,7 +3,7 @@
 describe("homeController", function() {
 
 	beforeEach(function() {
-		browser().navigateTo("/");
+		browser().navigateTo("/indexTestAngularMock.html");
 	});
 
 	it("Home", function() {
@@ -17,6 +17,19 @@ describe("homeController", function() {
 	it("Click", function() {
 		element("input[type='button']").click();
 		expect(browser().location().url()).toBe("/other");
+	});
+
+});
+
+describe("restCaller", function() {
+	
+	beforeEach(function() {
+		browser().navigateTo("/indexTestAngularMock.html#!/rest");
+	});
+	
+	it("Rest", function() {
+		expect(browser().location().url()).toBe("/rest");
+		expect(element("div.ng-view > div").html()).toBe("Angular mock");
 	});
 
 });

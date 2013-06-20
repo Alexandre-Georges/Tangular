@@ -2,7 +2,7 @@
 
 // karma start karma-e2e.conf.js
 
-basePath = '../../../';
+basePath = "../../../";
 urlRoot = "/_karma_/";
 
 files = [
@@ -13,12 +13,12 @@ files = [
 
 autoWatch = true;
 
-//singleRun = true;
+singleRun = true;
 
-browsers = ['Chrome', 'PhantomJS'];
+browsers = ["Firefox", "Chrome", "PhantomJS"];
 
 proxies = {
-  '/': 'http://localhost:8080/tangular/'
+	"/": "http://localhost:8080/tangular/"
 };
 
 //logLevel = LOG_DEBUG;
